@@ -11,7 +11,7 @@
   		height: auto;  
 	} 
 	body, html{
-		background:#f1f1f1;
+		background:#0157c8;
         color: #fff;
         height: 100%;
 	}
@@ -19,7 +19,7 @@
 		/* Largura máxima */
 		max-width:960px;
 		/* Alinha ao centro */
-		margin:0 auto;
+		margin: 10px; 
 		background:#fff;
 		overflow:hidden;
         height: 100%;
