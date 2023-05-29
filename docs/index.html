@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang=""pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Currículo</title>
+    <script> 
+
+        //aba de informações extras
+        $(document).ready(function(){
+            var toggle = true
+          $("#flip").click(function(){
+            if (toggle) {
+                $("#panel").slideDown(5000);
+                toggle = !toggle
+            } else {
+                $("#panel").slideUp(5000);
+                toggle = !toggle  
+            }
+          });
+          $("#stop").click(function(){
+            $("#panel").stop();
+          });
+        });
+
+        //pop-up de informações
+        $(document).ready(function(){
+            $("#nome").mouseenter(function(){
+                alert("Este é o currículo de Davi Motta! Para entrar em contato, mande um email para o endereço: davi.motta@sou.inteli.edu.br");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>  
+        <img id="foto-perfil" src="Foto_perfil.jpg">
+        <div class="informacoes-pessoais">
+            <h1 id="nome">Davi Rosalino Glória Motta</h1>
+            <h3>Google Project Manager</h3> 
+        </div>
+        <button id="stop">Stop sliding</button>
+
+        <div id="flip"> Um pouco mais sobre mim</div>
+        <div id="panel">
+            <p>Sou carioca, ex-morador da Baixada Fluminense e uma pessoa determinada, com o objetivo de conseguir um futuro diferente para mim, para a minha família e para outros jovens de baixa renda. Desde o ensino fundamental, tenho buscado me capacitar através dos estudos para atingir as posições que almejo. Desta forma, em 2020 fui aprovado e me tornei aluno do Instituto ISMART - Instituto Social para Motivar, Apoiar e Reconhecer Talentos -, como também, ao final do ensino médio, obtive aprovações em diversas universidades e vestibulares, como: PUC-Rio, UFF(SiSu), UERJ e Inteli. 
+            Atualmente, curso Engenharia de Computação no Instituto de Tecnologia e Liderança - Inteli - e tenho como meta crescer profissionalmente, ampliando minhas soft e hard-skills. Desejo cursar parte da minha graduação no exterior e o meu sonho grande é levar transformação através da tecnologia e da educação.</p>
+        </div>
+ 
+    </header> 
+ 
+    <div class="outras-infos ">
+        <dl>
+            <h2>FORMAÇÃO</h2>
+            <dt><b>Engenharia de Computação - Inteli</b></dt>
+            <dd>2023-2026</dd>
+            <dt><b>Ensino Médio - Pensi</b></dt>
+            <dd>2020-2022</dd>
+        </dl>
+    </div>
+
+    <div class="outras-infos ">
+        <dl>
+            <h2>EXPERIÊNCIA</h2>
+            <dt><b>Bolsista de Extensão Inteli</b></dt>
+            <dd>Atividade desenvolvida na área de CDL. </dd>
+            <dt><b>Aspire Leader 2023</b></dt>
+            <dd>Participo da formação de líderes realizada pelo instituto americano Aspire.</dd>
+        </dl>
+    </div>
+
+    <div class="outras-infos ">
+        <dl>
+            <h2>REALIZAÇÕES</h2>
+            <dt><b>Bronze OBMEP-2019</b></dt>
+            <dd>Medalha em olimpíada de matemática. </dd>
+            <dt><b>7° lugar Inteli </b></dt>
+            <dd>posição alcançada no vestibular Inteli 2023</dd>
+        </dl>
+    </div>
+  
+    <div>
+        <h2>HABILIDADES</h2>
+        <div class="atributo">
+            <p><b>Comunicação</b></p>
+            <div class="valor">
+                <div class="classificacao"></div>
+                <div class="classificacao"></div>
+                <div class="classificacao"></div>
+            </div>
+        </div>
+
+        <h2 class="subtitulo">PERSONALIDADE</h2>
+        <div class="atributo">
+            <p><b>Extrovertido</b></p>
+            <div class="valor">
+                <div class="classificacao"></div>
+                <div class="classificacao"></div>
+                <div class="classificacao"></div>
+                <div class="classificacao"></div>
+            </div>
+        </div>
+        <div class="atributo">
+            <p><b>Expansivo</b></p>
+            <div class="valor">
+                <div class="classificacao"></div>
+                <div class="classificacao"></div>
+                <div class="classificacao"></div>
+                <div class="classificacao"></div>
+                <div class="classificacao"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><b>Endereço:</b> Rua mmdc, número 80, Butantã/p>
+        <p><b>email:</b> mottadavi41@gmail.com</p>
+    </footer>
+
+
+
+</body>
+
+</html>
