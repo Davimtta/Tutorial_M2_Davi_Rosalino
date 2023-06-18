@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    border-radius: 10px;
+    background-color: rgb(181, 187, 246);
+    margin: 20px;
+    padding: 20px;
+
+
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto-perfil {
+    position: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    min-width: 320px;
+    width: 35%;
+    transition: 2s;
+}
+
+#foto-perfil:hover{
+    position: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    min-width: 320px;
+    width: 50%;
+}
+
+.informacoes-pessoais{
+    flex-wrap: wrap;
+    min-width: 400px;
+    width: 50%;
+}
+
+#panel, #flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+
+.outras-infos{
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.atributo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+.valor {
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.classificacao{
+    border-radius: 50%;
+    background-color: black;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+}
+
+.subtitulo {
+    border-top: 1px solid black;
+}
+
+footer {
+    border-top: 1px solid black;
+}
+
+
+
